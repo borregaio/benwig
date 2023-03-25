@@ -51,6 +51,7 @@ body {
 a {
   font-size: 14px;
   padding-bottom: 24px;
+  text-decoration: none;
 }
 
 #projects {
@@ -85,12 +86,7 @@ a {
   cursor: pointer;
 }
 
-.sidebar a:visited { 
-  text-decoration: none; 
-  color: #444; 
- }
-
- #projects a:visited { 
+a:visited, .sidebar a:visited, #projects a:visited { 
   text-decoration: none; 
   color: #444; 
  }
