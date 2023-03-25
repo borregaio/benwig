@@ -1,12 +1,13 @@
+var projects = document.getElementById("projects");
+
 function toggle() {
-    var click = document.getElementById("projects");
-    if (click.style.display === "none") {
-       click.style.display = "block";
+    if (projects.style.display === "none") {
+       projects.style.display = "block";
     } else {
-       click.style.display = "none";
+       projects.style.display = "none";
     }
  }
 
- function notDoneYet() {
-    alert("Not done yet!");
- }
+//  function notDoneYet() {
+//     alert("Not done yet!");
+//  }

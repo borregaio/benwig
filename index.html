@@ -6,29 +6,33 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Benjamin Wigmore</title>
-    <link rel="icon" type="image/png" href="https://www.google.com/s2/favicons?domain=css-tricks.com">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <div class="main">
 
-        <div class="right-logo">
-            <img src="images/name.png" alt="benjamin-wigmore" class="logo">
+        <div class="fade">
+
         </div>
 
-        <div class="left-menu">
-            <div class="dropown">
-                <button onclick="toggle()">PROJECTS</button>
-                <div id="projects">
-                    <a onclick="notDoneYet()" href="#">Project 1</a>
-                    <a onclick="notDoneYet()" href="#">Project 2</a>
-                    <a onclick="notDoneYet()" href="#">Project 3</a>
-                </div>
+        <video autoplay muted loop id="myVideo">
+            <source src="images/ocean.mp4" type="video/mp4">
+          </video>
+
+        <div class="main-logo">
+            <a href="index.html"><img src="images/name.png" alt="benjamin-wigmore" class="logo"></a>
+        </div>
+
+        <div class="sidebar">
+            <a onclick="toggle()">PROJECTS</a>
+            <div id="projects" style="display: none;" >
+                <a href="project-1.html">Project 1</a>
+                <a onclick="notDoneYet()" href="#">Project 2</a>
+                <a onclick="notDoneYet()" href="#">Project 3</a>
             </div>
-            <button onclick="notDoneYet()" >ABOUT</button>
-            <button onclick="notDoneYet()">CONTACT</button>
+            <a href="about.html">ABOUT</a>
+            <a onclick="notDoneYet()">CONTACT</a>
         </div>
 
 
