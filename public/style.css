@@ -87,20 +87,22 @@ a {
   cursor: pointer;
 }
 
-a:visited, .sidebar a:visited, #projects a:visited { 
+a:visited,
+.sidebar a:visited,
+#projects a:visited {
   text-decoration: none;
-  color: #444; 
- }
+  color: #444;
+}
 
- .card {
+.card {
   background-color: transparent;
   border: none;
- }
+}
 
 /* Page content. The value of the margin-left property should match the value of the sidebar's width property */
 .content {
-  margin-left: 300px;
-  padding: 1px 16px;
+  padding-left: 250px;
+  padding-right: 250px;
   margin-top: 45px;
 }
 
@@ -118,9 +120,8 @@ a:visited, .sidebar a:visited, #projects a:visited {
 }
 
 .about-description {
-  padding: 0 300px 0 0;
   text-align: justify;
-  line-height: 25px;
+  line-height: 30px;
 }
 
 /* Style the video: 100% width and height to cover the entire window */
@@ -143,26 +144,36 @@ a:visited, .sidebar a:visited, #projects a:visited {
 }
 
 /* On screens that are less than 700px wide, make the sidebar into a topbar */
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 1000px) {
+
+  #myVideo {
+    height: 100vh;
+  }
+
+  .main-logo {
+    margin-bottom: 20px;
+  }
+
   .sidebar {
-    width: 100%;
-    height: auto;
-    position: relative;
-  }
-
-  .sidebar a {
-    float: left;
-  }
-
-  div.content {
-    margin-left: 0;
-  }
-}
-
-/* On screens that are less than 400px, display the bar vertically, instead of horizontally */
-@media screen and (max-width: 400px) {
-  .sidebar a {
+    margin: 50px auto 50px auto;
+    width: 50%;
+    position: static;
+    padding: 0;
     text-align: center;
-    float: none;
+    align-items: center;
   }
+
+  .content {
+    padding: 0 50px 50px 50px;
+  }
+
+  .center-mobile {
+    text-align: center;
+  }
+
+  .carousel {
+    width: 100%;
+    padding: 0;
+  }
+
 }
