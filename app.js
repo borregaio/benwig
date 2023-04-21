@@ -24,8 +24,51 @@ app.get("/contact", function (req, res) {
 });
 
 app.get("/project1", function (req, res) {
-    res.render("project1",  {
-        pageName: "Project 1 — "
+    res.render("project",  {
+        pageName: "Dispersal Wear — ",
+        image: "a"
+    });
+});
+
+app.get("/project2", function (req, res) {
+    res.render("project",  {
+        pageName: "Concrete + Knit — ",
+        image: "b"
+    });
+});
+
+app.get("/project3", function (req, res) {
+    res.render("project",  {
+        pageName: "Concrete + Knit + Skin — ",
+        image: "c"
+    });
+});
+
+app.get("/project4", function (req, res) {
+    res.render("project",  {
+        pageName: "Set Design — ",
+        image: "d"
+    });
+});
+
+app.get("/project5", function (req, res) {
+    res.render("project",  {
+        pageName: "Beach Towels — ",
+        image: "e"
+    });
+});
+
+app.get("/project6", function (req, res) {
+    res.render("project",  {
+        pageName: "Tyre — ",
+        image: "f"
+    });
+});
+
+app.get("/project7", function (req, res) {
+    res.render("project",  {
+        pageName: "Artefacts of a Memory — ",
+        image: "g"
     });
 });
 
