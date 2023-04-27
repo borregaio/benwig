@@ -11,11 +11,11 @@ app.get("/", function (req, res) {
     });
 });
 
-app.get("/about", function (req, res) {
-    res.render("about", {
-        pageName: "About — "
-    });
-});
+// app.get("/about", function (req, res) {
+//     res.render("about", {
+//         pageName: "About — "
+//     });
+// });
 
 app.get("/contact", function (req, res) {
     res.render("contact",  {
@@ -32,14 +32,14 @@ app.get("/project1", function (req, res) {
 
 app.get("/project2", function (req, res) {
     res.render("project",  {
-        pageName: "Concrete + Knit — ",
+        pageName: "Concrete + Knit + Skin — ",
         image: "b"
     });
 });
 
 app.get("/project3", function (req, res) {
     res.render("project",  {
-        pageName: "Concrete + Knit + Skin — ",
+        pageName: "Concrete + Knit — ",
         image: "c"
     });
 });
