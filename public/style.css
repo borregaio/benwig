@@ -39,6 +39,11 @@ body {
 
 /* Sidebar */
 
+#sidebar {
+  width: auto;
+  height: auto;
+}
+
 .sidebar {
   float: left;
   margin-top: 50px;
@@ -111,6 +116,8 @@ a:visited,
   opacity: 60%;
   width: 30px;
   display: inline;
+  position: relative;
+  z-index: -1;
 }
 
 
@@ -204,15 +211,17 @@ a:visited,
 }
 
 
-
-
-
 /* Mobile View */
 
 @media only screen and (max-width: 700px) {
 
   .logo {
     width: 60%;
+  }
+
+  .card {
+    background-color: rgba(255, 255, 255, 0.9);
+    margin: auto 60px;
   }
 
   .sidebar {
@@ -224,12 +233,29 @@ a:visited,
     overflow: visible;
   }
 
+  .contact-link {
+    margin-top: 10px;
+    position: relative;
+    z-index: 1;
+  }
+
+
   /* Projects */
 
   #cover {
-    width: 380px;
-    height: 600px;
-    padding: 20px;
+    width: auto;
+    margin-left: 10px;
+  }
+
+  #cover img {
+    padding: 0;
+  }
+
+  /* Modal Content */
+
+  .modal-content {
+    top: 25%;
+    width: 80%;
   }
 
   /* Contact */

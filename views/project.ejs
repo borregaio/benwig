@@ -1,48 +1,28 @@
 <%- include("partials/header"); -%>
 
-    <!-- <div id="carouselExample" class="carousel slide">
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img src="images/project1/p1.jpg" class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item">
-                <img src="images/project1/p2.jpg" class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item">
-                <img src="images/project1/p3.jpg" class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item">
-                <img src="images/project1/p4.jpg" class="d-block w-100" alt="...">
-            </div>
+<%- include("partials/sidebar"); -%>
+
+    <div class="content">
+        <div id="cover">
+            <img id="myImg" class="myImages" src="images/<%=image%>1.jpg">
+            <img id="myImg" class="myImages" src="images/<%=image%>2.jpg">
+            <img id="myImg" class="myImages" src="images/<%=image%>3.jpg">
+            <img id="myImg" class="myImages" src="images/<%=image%>4.jpg">
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-        </button>
-    </div> -->
 
-    <div id="cover">
-        <img id="myImg" class="myImages" src="images/<%=image%>1.jpg">
-        <img id="myImg" class="myImages" src="images/<%=image%>2.jpg">
-        <img id="myImg" class="myImages" src="images/<%=image%>3.jpg">
-        <img id="myImg" class="myImages" src="images/<%=image%>4.jpg">
-    </div>
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
 
-    <!-- The Modal -->
-    <div id="myModal" class="modal">
+            <!-- The Close Button -->
+            <!-- <span class="close">&times;</span> -->
 
-        <!-- The Close Button -->
-        <!-- <span class="close">&times;</span> -->
+            <!-- Modal Content (The Image) -->
+            <img class="modal-content" id="img01">
 
-        <!-- Modal Content (The Image) -->
-        <img class="modal-content" id="img01">
+            <!-- Modal Caption (Image Text) -->
+            <div id="caption"></div>
+        </div>
 
-        <!-- Modal Caption (Image Text) -->
-        <div id="caption"></div>
     </div>
 
     <%- include("partials/footer"); -%>
