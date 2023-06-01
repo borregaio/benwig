@@ -9,6 +9,7 @@ body {
   color: #444;
 }
 
+
 /* Style the video: 100% width and height to cover the entire window */
 
 #myVideo {
@@ -226,11 +227,11 @@ a:visited,
   }
 
   .card {
-    background: rgb(255,255,255);
-    background: -moz-linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.8212418756565126) 30%);
-    background: -webkit-linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.8212418756565126) 30%);
-    background: linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.8212418756565126) 30%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endColorstr="#ffffff",GradientType=1); 
+    background: rgb(255, 255, 255);
+    background: -moz-linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.9052754891018908) 15%);
+    background: -webkit-linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.9052754891018908) 15%);
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.9052754891018908) 15%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff", endColorstr="#ffffff", GradientType=1);
     border-radius: 0;
     height: 100vh;
   }
