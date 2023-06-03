@@ -30,14 +30,14 @@ app.get("/project1", function (req, res) {
     });
 });
 
-app.get("/project2", function (req, res) {
+app.get("/project3", function (req, res) {
     res.render("project",  {
         pageName: "Concrete + Knit + Skin — ",
         image: "b"
     });
 });
 
-app.get("/project3", function (req, res) {
+app.get("/project2", function (req, res) {
     res.render("project",  {
         pageName: "Concrete + Knit — ",
         image: "c"
@@ -58,16 +58,16 @@ app.get("/project5", function (req, res) {
     });
 });
 
-app.get("/project6", function (req, res) {
+app.get("/project7", function (req, res) {
     res.render("project",  {
-        pageName: "Tyre — ",
+        pageName: "Artefacts of a Memory — ",
         image: "f"
     });
 });
 
-app.get("/project7", function (req, res) {
+app.get("/project6", function (req, res) {
     res.render("project",  {
-        pageName: "Artefacts of a Memory — ",
+        pageName: "Tyre — ",
         image: "g"
     });
 });
